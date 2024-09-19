@@ -32,3 +32,36 @@ magenta_d = 0xB16286
 yellow =    0xFABD2F
 yellow_d =  0xD79921
 
+[solarized-dark]
+black =     0x002b36
+white =     0xfdf6e3
+white_d =   0x93a1a1
+red =       0xdc322f
+red_d =     0x8f1d1d
+green =     0x859900
+green_d =   0x424d00
+blue =      0x268bd2
+blue_d =    0x145285
+cyan =      0x2aa198
+cyan_d =    0x15544a
+magenta =   0x6c71c4
+magenta_d = 0x484878
+yellow =    0xb58900
+yellow_d =  0x695400
+
+[monokai]
+black =     0x272822
+white =     0xf8f8f2
+white_d =   0x75715e
+red =       0xfa70a5
+red_d =     0xf92672
+green =     0xb9e371
+green_d =   0xa6e22e
+blue =      0xafe4f0
+blue_d =    0x66d9ef
+cyan =      0xe9f0ef
+cyan_d =    0x66d9ef
+magenta =   0xfa70a5
+magenta_d = 0xf92672
+yellow =    0xf5dfbf
+yellow_d =  0xf4bf75

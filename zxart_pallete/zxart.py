@@ -95,17 +95,17 @@ def iter_pixels(img: Image.Image) -> t.Iterator[Pixel]:
             yield Pixel((i, j), color)
 
 
-def match_pallete_color(c: Color, p: Pallete) -> Color:
-    matched_color_name = find_key(c, dict(DEFAULT_PALLETE))
+def match_pallete_color(c: Color, source_pallete: Pallete, target_pallete: Pallete) -> Color:
+    matched_color_name = find_key(c, dict(source_pallete))
     if not matched_color_name:
         raise ValueError(f"Unapplicable color `{c}`")
-    return p[matched_color_name]
+    return target_pallete[matched_color_name]
 
 
 def colorized_image(i: Image.Image, pallete: Pallete) -> Image.Image:
     res = i.copy().convert("RGB")
     for p in iter_pixels(res):
-        new_color = match_pallete_color(p.color, pallete)
+        new_color = match_pallete_color(p.color, DEFAULT_PALLETE, pallete)
         res.putpixel(p.pos, new_color)
     return res
 
